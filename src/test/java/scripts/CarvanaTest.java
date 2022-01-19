@@ -67,6 +67,7 @@ public class CarvanaTest extends Base {
         } else {
             driver.findElement(By.xpath("(//a[@data-test='TrackLink'])[2]")).click();
         }
+
         Waiter.pause(3);
         Assert.assertEquals(driver.getCurrentUrl(), expectedURL);
 
